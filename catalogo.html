@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/catalogostyle.css" />
+    <title>Catalogo</title>
+  </head>
+  <body>
+    <h1>Catalogo</h1>
+    <fieldset id="catalogo" class="contenedor">
+      <legend>Libros</legend>
+      <div class="articulo">
+        <img class="portada" src="assets/img/libro.jpg" alt="" />
+        <div class="informacion">
+          <p>Harry potter</p>
+          <p>$35.000</p>
+        </div>
+        <div class="contenedorcantidad">
+          <p>Cantidad</p>
+          <input type="Number" id="Libro1" min="0" />
+        </div>
+      </div>
+
+      <div class="articulo">
+        <img class="portada" src="assets/img/Libro2.png" alt="" />
+        <div class="informacion">
+          <p>Divergente</p>
+          <p>$66.000</p>
+        </div>
+        <div class="contenedorcantidad">
+          <p>Cantidad</p>
+          <input type="Number" id="Libro2" min="0" />
+        </div>
+      </div>
+
+      <div class="articulo">
+        <img class="portada" src="assets/img/Libro3.jpg" alt="" />
+        <div class="informacion">
+          <p>GOT</p>
+          <p>$98.000</p>
+        </div>
+        <div class="contenedorcantidad">
+          <p>Cantidad</p>
+          <input type="Number" id="Libro3" min="0"/>
+        </div>
+      </div>
+
+      <div class="articulo">
+        <img class="portada" src="assets/img/Libro4.jpg" alt="" />
+        <div class="informacion">
+          <p>TWD</p>
+          <p>$45.000</p>
+        </div>
+        <div class="contenedorcantidad">
+          <p>Cantidad</p>
+          <input type="Number" id="Libro4" min="0" />
+        </div>
+      </div>
+    </fieldset>
+     <div class="botones">
+      <button  id="boton3" onclick="location.href='index.html'" >Inicio</button>
+      <button  id="boton2">Vaciar carro</button>
+      <button  id="boton">Añadir al carro</button>
+     </div>
+  
+
+    <fieldset id="carro" style="display: none;">
+      <legend>Detalles carro</legend>
+
+      <div class="contenedorpago" id="contenidopago">
+        <div class="tabla">
+       
+          <table class="default" id="tabla">
+           
+          </table>
+        </div>
+        <div class="factura">
+          <p class="t-stroke t-shadow">El valor de su compra:</p>
+          <p class="t-stroke" id="pago">$250000</p>
+          <button  onclick="location.href='suscripcion.html'">Pagar</button>
+        </div>
+      </div>
+    </fieldset>
+    <script src="assets/catalogo.js"></script>
+  </body>
+</html>
